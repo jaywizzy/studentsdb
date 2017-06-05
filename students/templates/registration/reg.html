@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <form method='post' action ="reg/"> {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
