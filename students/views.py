@@ -83,9 +83,9 @@ def activate(request, uidb64, token):
         return HttpResponse('Activation link is invalid!')
 
 
-email = EmailMessage('Hi!', 'Cool message for %recipient.first_name%', 'vanshergzie@gmail.com', ['jaywizzy34@gmail.com'])
-email.extra_headers['recipient_variables'] = '{"joe@example.com":{"first_name":"Joe"}, "jane@example.com":{"first_name":"Jane"}}'
-email.send()
+# email = EmailMessage('Hi!', 'Cool message for %recipient.first_name%', 'vanshergzie@gmail.com', ['jaywizzy34@gmail.com'])
+# email.extra_headers['recipient_variables'] = '{"joe@example.com":{"first_name":"Joe"}, "jane@example.com":{"first_name":"Jane"}}'
+# email.send()
 # def register(request):
 #     if request.method == 'POST':
 #         form = StudentsForm(request.POST or None, request.FILES or None)
